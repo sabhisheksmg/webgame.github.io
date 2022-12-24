@@ -1,0 +1,70 @@
+ body {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+ }
+ 
+ #continer {
+     position: relative;
+     height: 600px;
+     width: 700px;
+     border: 10px solid rgb(4, 0, 255);
+     background-color: black;
+     margin: auto;
+     overflow: hidden;
+ }
+ 
+ #bird {
+     position: absolute;
+     background: url(ep.jpg);
+     height: 125px;
+     width: 225px;
+     background-size: contain;
+     background-repeat: no-repeat;
+     top: 0px;
+     left: 0px;
+ }
+ 
+ .pole {
+     position: absolute;
+     height: 200px;
+     width: 50px;
+     background-color: rgb(255, 230, 0);
+     left: 50px;
+     animation: block 2s infinite linear;
+ }
+ 
+ #pole_1 {
+     top: 0%;
+ }
+ 
+ #pole_2 {
+     bottom: 0%;
+ }
+ 
+ @keyframes block {
+     0% {
+         left: 1100px;
+     }
+     100% {
+         left: -30px;
+     }
+ }
+ 
+ #score_div {
+     text-align: center;
+     font-size: 50px;
+ }
+ 
+ #restart_btn {
+     position: absolute;
+     top: 0;
+     width: 100;
+     padding: 20px;
+     background-color: fuchsia;
+     color: white;
+     font-size: 35px;
+     border: none;
+     cursor: pointer;
+     display: none;
+ }
